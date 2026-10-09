@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enes Boz | Özgeçmiş – B-Novative Kurucusu</title>
+<meta name="description" content="Enes Boz — Marmara Üniversitesi Elektrik-Elektronik Mühendisliği öğrencisi, B-Novative kurucusu. Flutter, Supabase, ML ve uzaktan algılama projeleri, sertifikalar ve özgeçmiş.">
+<meta name="author" content="Enes Boz">
+<link rel="canonical" href="https://bnovative.com.tr/cv.html">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Enes Boz | Özgeçmiş – B-Novative Kurucusu">
+<meta property="og:description" content="Enes Boz — Elektrik-Elektronik Mühendisliği öğrencisi ve B-Novative kurucusu. Projeler, deneyimler ve sertifikalar.">
+<meta property="og:url" content="https://bnovative.com.tr/cv.html">
+<meta property="og:image" content="https://bnovative.com.tr/enes-boz.jpg">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://bnovative.com.tr/cv.html",
+      "url": "https://bnovative.com.tr/cv.html",
+      "name": "Enes Boz | Özgeçmiş",
+      "mainEntity": { "@id": "https://bnovative.com.tr/cv.html#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://bnovative.com.tr/cv.html#person",
+      "name": "Enes Boz",
+      "givenName": "Enes",
+      "familyName": "Boz",
+      "jobTitle": "Kurucu, B-Novative",
+      "description": "Marmara Üniversitesi Elektrik-Elektronik Mühendisliği öğrencisi ve B-Novative kurucusu.",
+      "url": "https://bnovative.com.tr/cv.html",
+      "image": "https://bnovative.com.tr/enes-boz.jpg",
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Marmara Üniversitesi" },
+      "worksFor": { "@type": "Organization", "@id": "https://bnovative.com.tr/#org", "name": "B-Novative", "url": "https://bnovative.com.tr/" },
+      "knowsAbout": ["Flutter", "Supabase", "Python", "Makine Öğrenmesi", "Uzaktan Algılama", "GIS", "Gömülü Sistemler"],
+      "sameAs": ["https://github.com/enesboz-9", "https://linkedin.com/in/enesboz-00e", "https://enesboz-9.github.io/blog/"]
+    }
+  ]
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230B0B0F'/%3E%3Ccircle cx='76' cy='24' r='7' fill='%231F4BFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg-primary:   #0a0e1a;
+    --bg-secondary: #111827;
+    --bg-card:      #141c2e;
+    --accent-cyan:  #00d4ff;
+    --accent-green: #00ff88;
+    --accent-amber: #ffb703;
+    --text-primary: #e8eaf0;
+    --text-muted:   #6b7a99;
+    --border:       rgba(0,212,255,0.15);
+    --font-display: 'Syne', sans-serif;
+    --font-mono:    'Space Mono', monospace;
+    --font-body:    'Inter', sans-serif;
+}
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: var(--bg-primary);
+    background-image:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0,212,255,0.08), transparent),
+        repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(0,212,255,0.02) 80px, rgba(0,212,255,0.02) 81px);
+    font-family: var(--font-body);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* NAV */
+nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,14,26,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 0;
+}
+.nav-inner { display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; }
+.nav-btn {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid rgba(0,212,255,0.25);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.nav-btn:hover, .nav-btn.active {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    background: rgba(0,212,255,0.06);
+}
+
+/* PAGES */
+.page { display: none; padding: 3rem 0 4rem; }
+.page.active { display: block; }
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem 2.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+}
+.hero-tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--accent-cyan);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.hero-name {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1.05;
+}
+.hero-name span {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-top: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+.hero-badges {
+    display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;
+}
+.badge {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 2px;
+    border: 1px solid;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.badge-cyan  { color: var(--accent-cyan);  border-color: rgba(0,212,255,0.4);  background: rgba(0,212,255,0.06); }
+.badge-green { color: var(--accent-green); border-color: rgba(0,255,136,0.4);  background: rgba(0,255,136,0.06); }
+.badge-amber { color: var(--accent-amber); border-color: rgba(255,183,3,0.4);  background: rgba(255,183,3,0.06); }
+
+/* PROFILE PIC */
+.profile-wrap { display: flex; justify-content: center; margin: 2rem 0; }
+.profile-pic {
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    border: 3px solid rgba(0,212,255,0.5);
+    box-shadow: 0 0 40px rgba(0,212,255,0.25);
+    object-fit: cover;
+}
+
+/* SECTION HEADER */
+.section-header {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    border-left: 3px solid var(--accent-cyan);
+    padding-left: 1rem;
+    margin: 2.5rem 0 1.5rem;
+}
+.section-header small {
+    display: block;
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-top: 0.2rem;
+    letter-spacing: 0.1em;
+}
+
+/* ABOUT TEXT */
+.about-text {
+    color: #9aa3b8;
+    line-height: 1.8;
+    font-size: 0.95rem;
+    max-width: 760px;
+}
+.about-text p { margin-bottom: 0.75rem; }
+.about-text strong { color: var(--accent-cyan); }
+
+/* BLOG BANNER */
+.blog-banner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(0,255,136,0.05));
+    border: 1px solid rgba(0,212,255,0.35);
+    border-radius: 4px;
+    padding: 1.1rem 1.5rem;
+    max-width: 560px;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.blog-banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
+}
+.blog-banner:hover {
+    border-color: var(--accent-cyan);
+    background: linear-gradient(135deg, rgba(0,212,255,0.13), rgba(0,255,136,0.08));
+    transform: translateX(4px);
+}
+.blog-icon { font-size: 1.8rem; }
+.blog-label {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    color: var(--accent-cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.2rem;
+}
+.blog-title {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.blog-url {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+}
+.blog-arrow {
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: var(--accent-cyan);
+    opacity: 0.6;
+}
+
+/* EDUCATION CARD */
+.edu-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 520px;
+    margin-top: 0.5rem;
+}
+.edu-icon { font-size: 1.6rem; }
+.edu-uni { font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; }
+.edu-dept { font-size: 0.82rem; color: var(--accent-cyan); margin: 0.2rem 0; }
+.edu-status { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); }
+
+/* PROJECT GRID */
+.proj-filter {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 0.45rem 0.9rem;
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+.proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.25rem;
+}
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.project-card:hover { border-color: rgba(0,212,255,0.4); transform: translateY(-2px); }
+.project-card:hover::before { opacity: 1; }
+.card-category { font-family: var(--font-mono); font-size: 0.62rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 0.5rem; }
+.card-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.2rem; }
+.card-subtitle { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.7rem; }
+.card-desc { font-size: 0.83rem; color: #9aa3b8; line-height: 1.6; margin-bottom: 1rem; flex: 1; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.6rem; }
+.tag {
+    font-family: var(--font-mono); font-size: 0.62rem;
+    padding: 0.18rem 0.5rem;
+    background: rgba(0,212,255,0.08);
+    border: 1px solid rgba(0,212,255,0.2);
+    border-radius: 2px;
+    color: var(--accent-cyan);
+}
+.tag-green { background: rgba(0,255,136,0.08); border-color: rgba(0,255,136,0.2); color: var(--accent-green); }
+.btn-row { display: flex; gap: 0.5rem; margin-top: auto; padding-top: 1rem; }
+.btn-link {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid rgba(0,212,255,0.35);
+    border-radius: 2px;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    transition: all 0.18s;
+    white-space: nowrap;
+}
+.btn-link:hover { background: rgba(0,212,255,0.1); border-color: var(--accent-cyan); }
+
+/* LANGUAGE SWITCH */
+nav { position: sticky; }
+.lang-switch { position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); display: flex; border: 1px solid rgba(0,212,255,0.25); border-radius: 2px; overflow: hidden; }
+.lang-btn { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; padding: 0.45rem 0.8rem; border: none; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.2s; }
+.lang-btn + .lang-btn { border-left: 1px solid rgba(0,212,255,0.25); }
+.lang-btn:hover { color: var(--accent-cyan); }
+.lang-btn.active { background: rgba(0,212,255,0.12); color: var(--accent-cyan); }
+@media (max-width: 1000px) { .lang-switch { position: static; transform: none; width: max-content; margin: 0.6rem auto 0; } }
+
+.proj-notice { font-size: 0.8rem; line-height: 1.6; color: var(--accent-amber); background: rgba(255,183,3,0.07); border: 1px solid rgba(255,183,3,0.3); border-left: 3px solid var(--accent-amber); border-radius: 3px; padding: 0.75rem 1rem; margin-bottom: 1.25rem; }
+
+.wip-note { align-self: flex-start; font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-amber); background: rgba(255,183,3,0.08); border: 1px solid rgba(255,183,3,0.3); border-radius: 3px; padding: 0.3rem 0.6rem; margin-bottom: 0.7rem; }
+
+.sub-header { font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-cyan); margin: 0.5rem 0 1rem; }
+.sub-header.star span::before { content: '★ '; color: var(--accent-amber); }
+.sub-header + .proj-filter { margin-top: 0; }
+.project-card.featured { border-color: rgba(255,183,3,0.45); box-shadow: 0 0 0 1px rgba(255,183,3,0.12), 0 6px 24px rgba(255,183,3,0.06); }
+
+/* EXPERIENCE */
+.exp-list { display: flex; flex-direction: column; gap: 1.5rem; position: relative; padding-left: 1.5rem; border-left: 1px solid var(--border); }
+.exp-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem; position: relative; }
+.exp-card::before { content: ''; position: absolute; left: -1.5rem; top: 1.9rem; width: 11px; height: 11px; margin-left: -5px; border-radius: 50%; background: var(--accent-cyan); box-shadow: 0 0 10px rgba(0,212,255,0.6); }
+.exp-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.8rem; }
+.exp-role { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; }
+.exp-company { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem; }
+.exp-date { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-cyan); border: 1px solid var(--border); border-radius: 3px; padding: 0.25rem 0.6rem; white-space: nowrap; }
+.exp-points { list-style: none; margin: 0 0 1rem; padding: 0; }
+.exp-points li { font-size: 0.83rem; color: #9aa3b8; line-height: 1.6; padding-left: 1.1rem; position: relative; margin-bottom: 0.35rem; }
+.exp-points li::before { content: '▹'; position: absolute; left: 0; color: var(--accent-green); }
+
+/* CERT */
+.cert-list { display: flex; flex-direction: column; gap: 1.5rem; }
+.cert-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+@media (max-width: 700px) { .cert-row { grid-template-columns: 1fr; } }
+.cert-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.cert-icon { font-size: 2rem; min-width: 2.5rem; text-align: center; }
+.cert-title { font-family: var(--font-display); font-size: 0.92rem; font-weight: 600; }
+.cert-issuer { font-size: 0.78rem; color: var(--text-muted); margin: 0.15rem 0; }
+.cert-desc { font-size: 0.78rem; color: #9aa3b8; margin: 0.4rem 0 0.5rem; line-height: 1.5; }
+.cert-link { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-cyan); text-decoration: none; }
+.cert-link:hover { color: var(--accent-green); }
+.cert-img { width: 100%; border-radius: 4px; border: 1px solid var(--border); }
+.divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+
+/* CONTACT */
+.contact-list { display: flex; flex-direction: column; gap: 0.75rem; max-width: 500px; }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(0,212,255,0.1);
+    margin-top: 2rem;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: #3a4a66;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <button class="nav-btn active" onclick="showPage('hakkimda', this)" data-i18n="nav_about">🏠 Hakkımda</button>
+    <button class="nav-btn" onclick="showPage('deneyimler', this)" data-i18n="nav_exp">💼 Deneyimlerim</button>
+    <button class="nav-btn" onclick="showPage('projeler', this)" data-i18n="nav_proj">🚀 Projelerim</button>
+    <button class="nav-btn" onclick="showPage('sertifikalar', this)" data-i18n="nav_cert">🏆 Sertifikalar</button>
+    <button class="nav-btn" onclick="showPage('iletisim', this)" data-i18n="nav_contact">📬 İletişim</button>
+  </div>
+  <div class="lang-switch" role="group" aria-label="Language / Dil">
+    <button class="lang-btn active" data-lang="tr" onclick="setLang('tr')" aria-label="Türkçe">TR</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')" aria-label="English">EN</button>
+  </div>
+</nav>
+
+<!-- ═══ HAKKIMDA ═══ -->
+<div id="page-hakkimda" class="page active">
+  <div class="container">
+    <div class="hero">
+      <div class="hero-tag" data-i18n="hero_tag">// Elektrik-Elektronik Mühendisi</div>
+      <h1 class="hero-name">Enes <span>BOZ</span></h1>
+      <p class="hero-subtitle" data-i18n="hero_sub">FPGA Tasarım · Gömülü Sistemler · Python Geliştirme · Borsa Analiz Araçları</p>
+      <div class="hero-badges">
+        <span class="badge badge-cyan" data-i18n="hb0">AI Engineering</span>
+        <span class="badge badge-green" data-i18n="hb1">Makine Öğrenmesi</span>
+        <span class="badge badge-amber" data-i18n="hb2">Elektrik Dağıtım Sektörü</span>
+        <span class="badge badge-cyan" data-i18n="hb3">Mobil Uygulama Geliştirme</span>
+        <span class="badge badge-green" data-i18n="hb4">Uydu &amp; Coğrafi Veri Analizi</span>
+        <span class="badge badge-amber">Python / Streamlit</span>
+        <span class="badge badge-cyan">FPGA / VHDL</span>
+        <span class="badge badge-green" data-i18n="hb7">STM32 / Gömülü Sistemler</span>
+      </div>
+    </div>
+
+    <div class="profile-wrap">
+      <img class="profile-pic" src="img/enes-boz-profil.webp" alt="Enes Boz" width="300" height="300" alt="Enes BOZ">
+    </div>
+
+    <div class="section-header"><span data-i18n="h_about">Hakkımda</span><small>// ABOUT ME</small></div>
+    <div class="about-text">
+      <p data-i18n="about1">Genç yaşlardan itibaren farklı sektörlerde deneyim kazanarak çok yönlü bir bakış açısı geliştirmiş, sorumluluk almaktan çekinmeyen ve proaktif yaklaşımı benimsemiş bir profesyonelim. Güçlü liderlik özelliklerim ve ekip çalışmasına yatkınlığım sayesinde projelerde sonuç odaklı hareket eder, her görevde sürekli gelişimi ve yüksek kaliteyi hedeflerim.</p>
+      <p data-i18n="about2">Keskin gözlem yeteneğim ve analitik düşünme becerimle, karmaşık problemlere yenilikçi çözümler üretmekten heyecan duyarım. Mühendislik disiplinimin yanı sıra finans, ekonomi ve girişimcilik alanlarına duyduğum derin ilgiyle, bu alanlardaki bilgi birikimimi sürekli genişleterek <strong>disiplinler arası bir yetkinlik</strong> sunmayı amaçlıyorum.</p>
+    </div>
+
+    <a class="blog-banner" href="https://enesboz-9.github.io/blog/" target="_blank">
+      <div class="blog-icon">✍️</div>
+      <div>
+        <div class="blog-label" data-i18n="blog_label">// Kişisel Blog</div>
+        <div class="blog-title" data-i18n="blog_title">Teknoloji & Yazılım Blogu</div>
+        <div class="blog-url">enesboz-9.github.io/blog</div>
+      </div>
+      <div class="blog-arrow">→</div>
+    </a>
+
+    <div class="section-header" style="font-size:1.1rem;margin-top:2rem;"><span data-i18n="h_edu">Eğitim</span><small>// EDUCATION</small></div>
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <div class="edu-uni">Marmara Üniversitesi</div>
+        <div class="edu-dept">Electrical and Electronics Engineering (English)</div>
+        <div class="edu-status" data-i18n="edu_status">4. Sınıf · Devam Ediyor</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ DENEYİMLERİM ═══ -->
+<div id="page-deneyimler" class="page">
+  <div class="container">
+    <div class="section-header"><span data-i18n="h_exp">Deneyimlerim</span><small>// EXPERIENCE</small></div>
+    <div class="exp-list">
+
+      <div class="exp-card">
+        <div class="exp-head">
+          <div>
+            <div class="exp-role" data-i18n="e0">Stajyer Mühendis</div>
+            <div class="exp-company" data-i18n="e1">🏢 YEDAŞ · Yeşilırmak Elektrik Dağıtım A.Ş.</div>
+          </div>
+          <div class="exp-date" data-i18n="e2">Temmuz 2026 – Ağustos 2026</div>
+        </div>
+        <ul class="exp-points">
+          <li data-i18n="e3">Çorum, Amasya, Samsun, Ordu ve Sinop'u kapsayan hizmet bölgesinde, enerji hatları çevresindeki bitki örtüsü tecavüzünü tespit eden ve altyapı risklerini değerlendiren bir sistem geliştirdim.</li>
+          <li data-i18n="e4">Sentinel Hub Statistical API ile hat koridoru poligonları için NDVI zaman serisi analizi yaptım; bulutluluk kaynaklı hataları <em>leastCC</em> mozaikleme yöntemiyle azalttım.</li>
+          <li data-i18n="e5">Riskli bölgeleri görsel kayıtlarla tespit eden, risk skorlaması yapıp önceliklendirilmiş rapor üreten bir yapı kurdum.</li>
+          <li data-i18n="e6">PostGIS veri şemasını (hatlar, direkler, NDVI ölçümleri, risk tespitleri, saha doğrulamaları) tasarladım; Leaflet.js tabanlı web arayüzüne hat bazlı sorgu geçmişi ve bulut güven göstergesi ekledim.</li>
+          <li data-i18n="e7">Sahada tespitlerin doğrulanması için Flutter tabanlı bir mobil uygulama geliştirdim.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Sentinel Hub</span><span class="tag">NDVI</span><span class="tag">PostGIS</span><span class="tag">Python</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">Leaflet.js</span><span class="tag">Flutter</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-head">
+          <div>
+            <div class="exp-role" data-i18n="e8">Full Stack Developer</div>
+            <div class="exp-company" data-i18n="e9">📱 uni101 · Üniversite Sosyal Platformu (Marmara Üniversitesi öğrencileri için)</div>
+          </div>
+          <div class="exp-date" data-i18n="e10">Aralık 2025 – Devam Ediyor</div>
+        </div>
+        <ul class="exp-points">
+          <li data-i18n="e11">Flutter ve Supabase ile üniversite öğrencilerine yönelik sosyal platformu uçtan uca (mobil arayüz, veritabanı, güvenlik, bildirim) tek başıma geliştiriyorum.</li>
+          <li data-i18n="e12">Supabase RLS güvenlik denetimi yaptım, veritabanı tetikleyici hatalarını canlı SQL analiziyle çözüp migration'larla şemayı yönettim.</li>
+          <li data-i18n="e13">Güvenli oturum saklama ve eşzamanlı işlem kilitleme ile Instagram tarzı çoklu hesap geçişi geliştirdim.</li>
+          <li data-i18n="e14">Rozet seviyeli premium/bağış sistemi, yönetici paneli, TikTok/Instagram/LinkedIn/Twitter gönderi gömme ve Jamendo ile müzik entegrasyonu gibi özellikleri hayata geçirdim.</li>
+          <li data-i18n="e15">Akış performansını (RepaintBoundary, önbellekleme) iyileştirdim; ~8.000 satırlık ayarlar ekranını 15 modüler dosyaya ayırarak kod tabanını sadeleştirdim.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">RLS</span><span class="tag">Edge Functions</span><span class="tag">Firebase (FCM)</span><span class="tag">AdMob</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PROJELERİM ═══ -->
+<div id="page-projeler" class="page">
+  <div class="container">
+    <div class="section-header"><span data-i18n="h_proj">Projelerim</span><small>// MY PROJECTS</small></div>
+    <div class="proj-notice" data-i18n="proj_notice">⏳ Bazı demolar ücretsiz sunucularda barındırıldığı için uyku modunda olabilir. Bir proje sayfası hemen açılmazsa lütfen uyandırınız (ör. “Yes, get this app back up!” butonuna basınız) ve birkaç saniye bekleyiniz.</div>
+    <div class="sub-header star"><span data-i18n="feat_h">Öne Çıkanlar</span></div>
+    <div class="proj-grid" id="featGrid"></div>
+    <div class="sub-header" style="margin-top:2.5rem;"><span data-i18n="all_h">Tüm Projeler</span></div>
+    <select class="proj-filter" id="catFilter" onchange="filterProjects()">
+      <option value="Tümü">Tümü</option>
+    </select>
+    <div class="proj-grid" id="projGrid"></div>
+  </div>
+</div>
+
+<!-- ═══ SERTİFİKALAR ═══ -->
+<div id="page-sertifikalar" class="page">
+  <div class="container">
+    <div class="section-header"><span data-i18n="h_cert">Sertifikalar</span><small>// CERTIFICATIONS</small></div>
+    <div class="cert-list" id="certList"></div>
+  </div>
+</div>
+
+<!-- ═══ İLETİŞİM ═══ -->
+<div id="page-iletisim" class="page">
+  <div class="container">
+    <div class="section-header"><span data-i18n="h_contact">İletişim</span><small>// CONTACT</small></div>
+    <div class="contact-list">
+      <div class="cert-card">
+        <div class="cert-icon">📧</div>
+        <div>
+          <div class="cert-title" data-i18n="contact_email">E-posta</div>
+          <a class="cert-link" href="mailto:enesboz446@gmail.com">enesboz446@gmail.com</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">💼</div>
+        <div>
+          <div class="cert-title">LinkedIn</div>
+          <a class="cert-link" href="https://linkedin.com/in/enesboz-00e" target="_blank">linkedin.com/in/enesboz-00e</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🐙</div>
+        <div>
+          <div class="cert-title">GitHub</div>
+          <a class="cert-link" href="https://github.com/enesboz-9" target="_blank">github.com/enesboz-9</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer data-i18n="footer">⚡ EE Mühendisi · 2025</footer>
+
+<script>
+const PROJECTS = [{"id": 13, "title": "PoleOptimizer Pro", "subtitle": "OpenStreetMap Tabanlı Elektrik Direği Yerleşim Optimizasyonu", "description": "Enerji hatları için direk yerleşimini OpenStreetMap yol ağı verisi üzerinden optimize etmeyi amaçlayan GIS tabanlı Streamlit uygulaması. Güzergâhı yol ağına oturtur, köşe ve kavşak noktalarını tespit eder, serbest çizilen hatları Douglas-Peucker ile sadeleştirir.", "category": "GIS / Python", "tags": ["Python", "Streamlit", "GIS", "OpenStreetMap", "osmnx", "GeoPandas", "PostGIS"], "hardware": [], "github_url": "", "demo_url": "https://poleoptimizerpro-64j6g3mfphjhmrgxh2ue45.streamlit.app/", "wip": true}, {"id": 14, "title": "Direk Tepe Kuvveti Analizörü", "subtitle": "AutoCAD DXF Çizimlerinden Direk Tepe Kuvveti Hesabı", "description": "AutoCAD DXF çizimlerini okuyup direk düğümlerini ve kablo bağlantılarını tespit eden, bileşke tepe kuvvetlerini hesaplayarak uygun direk tipini (9 Ağaç, 10I, 12I, K Tipi) öneren mühendislik uygulaması.", "category": "Python / Mühendislik", "tags": ["Python", "Streamlit", "AutoCAD", "DXF", "Mühendislik Hesabı"], "hardware": [], "github_url": "", "demo_url": "https://uuutyzu7gnowkcwqrzvsks.streamlit.app/", "wip": true}, {"id": 15, "title": "Master English", "subtitle": "İngilizce Öğrenme Uygulaması", "description": "İngilizce öğrenmeye yönelik geliştirdiğim, Streamlit tabanlı etkileşimli uygulama.", "category": "Python / Eğitim", "tags": ["Python", "Streamlit", "İngilizce", "Eğitim"], "hardware": [], "github_url": "", "demo_url": "https://english-master.streamlit.app/"}, {"id": 16, "title": "Tahmin Oyunu", "subtitle": "Etkileşimli Tahmin Oyunu", "description": "Streamlit ile geliştirdiğim, kullanıcıların tahmin yürüttüğü etkileşimli web oyunu.", "category": "Python / Oyun", "tags": ["Python", "Streamlit", "Oyun"], "hardware": [], "github_url": "", "demo_url": "https://newgamev12-8csu2twrvhtd2m6fmxzjyt.streamlit.app/"}, {"id": 17, "title": "Futbolcu Tahmin Oyunu", "subtitle": "Futbolcuyu Bil, Puanı Topla", "description": "Futbolcuları tahmin etmeye dayalı, Streamlit ile geliştirdiğim etkileşimli oyun.", "category": "Python / Oyun", "tags": ["Python", "Streamlit", "Oyun", "Futbol"], "hardware": [], "github_url": "", "demo_url": "https://futbolcutahmin-9ssn3n9t8g49jusdaeuzea.streamlit.app/"}, {"id": 18, "title": "Kripto & BIST Analiz Uygulaması", "subtitle": "Kripto Para ve Borsa İstanbul Analiz Aracı", "description": "Kripto para ve Borsa İstanbul verilerini tek yerden analiz etmeye yönelik Streamlit tabanlı uygulama.", "category": "Python / Fintech", "tags": ["Python", "Streamlit", "Kripto", "BIST", "Analiz"], "hardware": [], "github_url": "", "demo_url": "https://aqyragkjvvt5wczu8tw8p8.streamlit.app/"}, {"id": 10, "title": "İSG Test Platformu", "subtitle": "YEDAŞ Stajında Geliştirilen İş Sağlığı ve Güvenliği Test Platformu", "description": "YEDAŞ stajım kapsamında geliştirdiğim, İş Sağlığı ve Güvenliği (İSG) konusunda çevrim içi test uygulayan web tabanlı platform.", "category": "Web / Eğitim", "tags": ["Web", "İSG", "Test Platformu", "Vercel", "YEDAŞ"], "hardware": [], "github_url": "", "demo_url": "https://isg-test-platform-jfgnse9f2-enesboz-9s-projects.vercel.app/"}, {"id": 11, "title": "Sağlık Sohbet Botu", "subtitle": "Yapay Zeka Destekli Ön Semptom Değerlendirme Asistanı", "description": "Kullanıcıların şikayetlerini kendi cümleleriyle anlatmasını sağlayan, ek sorularla bilgi toplayıp istatistiksel bir model ile 41 olası durum ve 132 semptom üzerinden ön değerlendirme sunan sohbet botu. Kesin tanı koymaz; doktora gitmeden önce şikayetleri düzenlemeye yardımcı olur.", "category": "AI / Web", "tags": ["AI", "Chatbot", "Sağlık", "Makine Öğrenmesi", "Vercel"], "hardware": [], "github_url": "", "demo_url": "https://healty-chatbot.vercel.app/"}, {"id": 12, "title": "ML Eğitim Web Sitesi", "subtitle": "Yapay Zeka ve Görüntü İşleme Mühendisliği Eğitim Platformu (ML Akademi)", "description": "Python temellerinden YOLO tabanlı nesne tespitine uzanan, 22 modüllü yapılandırılmış bir yapay zeka ve bilgisayarlı görü müfredatı sunan eğitim sitesi. Etkileşimli yol haritası, isteğe bağlı yan dallar ve terimler sözlüğü içerir.", "category": "Web / Eğitim", "tags": ["Web", "Makine Öğrenmesi", "Bilgisayarlı Görü", "YOLO", "Eğitim", "Vercel"], "hardware": [], "github_url": "", "demo_url": "https://mlegitim-projesi-app-v1.vercel.app/"}, {"id": 1, "title": "BIST Analiz Terminali", "subtitle": "Borsa İstanbul Teknik Analiz Platformu", "description": "Python tabanlı, gerçek zamanlı BIST hisse senedi verilerini çeken, teknik indikatörler (RSI, MACD, Bollinger Bantları) hesaplayan ve interaktif grafikler üreten tam kapsamlı analiz terminali.", "category": "Python / Fintech", "tags": ["Python", "Pandas", "Plotly", "Streamlit", "REST API", "Teknik Analiz"], "hardware": [], "github_url": "https://github.com/enesboz-9/bist", "demo_url": "https://liicwet2rsxjrxjmtbvt5w.streamlit.app/"}, {"id": 2, "title": "BIST Sinyal Botu", "subtitle": "Borsa İstanbul Teknik Analiz Telegram Botu", "description": "Borsa İstanbul hisseleri için otomatik teknik analiz yapan ve sinyal üreten Telegram botu. RSI, MACD ve diğer indikatörlere dayalı alım-satım sinyallerini gerçek zamanlı olarak Telegram üzerinden iletir.", "category": "Python / Fintech", "tags": ["Python", "Telegram Bot", "Teknik Analiz", "BIST", "Sinyal", "Otomatik"], "hardware": [], "github_url": "https://github.com/enesboz-9/bist-bot", "demo_url": ""}, {"id": 3, "title": "AI Yönlendirici", "subtitle": "En Uygun AI Çözümüne Yönlendiren Akıllı Asistan", "description": "Kullanıcının ihtiyacına göre en uygun yapay zeka aracını analiz edip öneren akıllı yönlendirici uygulama. GPT, Claude, Gemini ve diğer AI platformları arasında karşılaştırmalı değerlendirme yapar.", "category": "AI / Python", "tags": ["AI", "Python", "NLP", "Yönlendirme", "Karşılaştırma"], "hardware": [], "github_url": "https://github.com/enesboz-9/a-y-nlendirici", "demo_url": "https://a-y-nlendirici-zggdyhga27ubargergkijp.streamlit.app/"}, {"id": 4, "title": "AI Destekli Akıllı Haber Platformu", "subtitle": "AI destekli güncel olarak veri çeken çeşitli özelliklerle güçlendirilmiş haber sitesi", "description": "API kullanılarak AI özellikleri entegre edilmiş modern bir web sitesi. Güncel haberleri otomatik olarak çeken, özetleyen ve kategorize eden akıllı haber platformu.", "category": "AI / Python", "tags": ["AI", "Python", "Web", "Haber", "API"], "hardware": [], "github_url": "https://github.com/enesboz-9/news.app", "demo_url": "https://newsapp-nbjpwfaw7ezfvappvzkj2iy.streamlit.app/", "featured": true}, {"id": 5, "title": "FPGA Kod Analizör", "subtitle": "FPGA / VHDL Kaynak Kodu Analiz Aracı", "description": "FPGA projelerindeki VHDL kaynak kodlarını analiz eden, kaynak kullanımını, sinyalleri ve bağlantıları otomatik olarak raporlayan kod analizör aracı.", "category": "FPGA / VHDL", "tags": ["Python", "VHDL", "FPGA", "Kod Analiz", "Otomasyon"], "hardware": [], "github_url": "https://github.com/enesboz-9/fpga-kod-analiz-r", "demo_url": "https://fpga-code.streamlit.app/"}, {"id": 6, "title": "Teknoloji & Yazılım Blog", "subtitle": "Teknoloji ve yazılım üzerine Türkçe blog", "description": "Yazılım, mühendislik, yapay zeka ve teknoloji dünyasına dair düşünceler, rehberler ve analizler içeren kişisel blog.", "category": "Web / İçerik", "tags": ["Blog", "Yazılım", "Teknoloji", "İçerik", "GitHub Pages"], "hardware": [], "github_url": "https://github.com/enesboz-9/blog", "demo_url": "https://enesboz-9.github.io/blog/"}, {"id": 7, "title": "Oxford 5000 Kelime Uygulaması", "subtitle": "Modern İngilizce kelime öğrenme uygulaması", "description": "Oxford 5000 listesindeki kelimeleri kapsayan, ücretsiz Groq API ile çalışan modern kelime öğrenme uygulaması. Akıllı tekrar sistemi ve yapay zeka destekli açıklamalar içerir.", "category": "AI / Web", "tags": ["Groq API", "AI", "Kelime", "Oxford", "GitHub Pages", "JavaScript"], "hardware": [], "github_url": "https://github.com/enesboz-9/xford-5000-app", "demo_url": "https://enesboz-9.github.io/xford-5000-app/"}, {"id": 8, "title": "Araç Fiyat Tahmin Platformu", "subtitle": "AI Destekli Araç Değerleme & Piyasa Analiz Platformu", "description": "Araç fotoğrafından kasa tipini, rengi, markayı ve model yılını otomatik tespit eden, XGBoost tabanlı makine öğrenmesi modeliyle gerçek zamanlı fiyat tahmini yapan platform. Groq Vision API entegrasyonu, piyasa karşılaştırması ve benzer araç önerileri sunar.", "category": "AI / Python", "tags": ["Python", "XGBoost", "Streamlit", "Groq API", "Makine Öğrenmesi", "Veri Analizi"], "hardware": [], "github_url": "https://github.com/enesboz-9/model_e-itimi", "demo_url": "https://modele-itimi-epi7wz7ece4oym88dabnao.streamlit.app/", "featured": true}, {"id": 9, "title": "AppVentures — Play Store Analizör", "subtitle": "Mobil Girişimler İçin Profesyonel Pazar Analizi & Fırsat Radarı", "description": "Google Play Store verilerini kullanarak kapsamlı pazar analizi yapan profesyonel platform. Kategori rekabet haritası, fırsat radarı, rekabet istihbaratı ve gelir tahmini gibi modüllerle mobil uygulama girişimcilerine stratejik içgörüler sunar. 1.250.000+ uygulama verisi üzerinde çalışır.", "category": "AI / Python", "tags": ["Python", "Streamlit", "Pazar Analizi", "Play Store", "Veri Görselleştirme", "Plotly", "Pandas"], "hardware": [], "github_url": "https://github.com/enesboz-9/play_store_analizor", "demo_url": "https://appukzbnvqccfgjw8mzasrn.streamlit.app/", "featured": true}];
+const CERTS = [{"title": "MATLAB Onramp", "issuer": "MathWorks", "date": "02.10.2026", "category": "MATLAB/Mühendislik", "description": "MathWorks Training Services tarafından sunulan, MATLAB temellerini kapsayan kendi hızında ilerlenen çevrim içi eğitimin %100'ünün tamamlanması.", "credential_url": "https://matlabacademy.mathworks.com", "image_file": "cert_matlab_onramp.jpg"}, {"title": "Machine Learning Onramp", "issuer": "MathWorks", "date": "21.05.2026", "category": "Makine Öğrenmesi", "description": "MathWorks Training Services tarafından sunulan, MATLAB ile makine öğrenmesi temellerini kapsayan kendi hızında ilerlenen çevrim içi eğitimin %100'ünün tamamlanması.", "credential_url": "https://matlabacademy.mathworks.com", "image_file": "cert_ml_onramp.jpg"}, {"title": "Borusan Teknoloji Okulu", "issuer": "Borusan / Toptalent Business School", "date": "08.07.2025", "category": "Başarı Sertifikası", "description": "Yapay Zeka, Makine Öğrenmesi, Otomotiv Teknolojileri, Yazılım, Otomasyon ve Yenilenebilir Enerji konularını kapsayan 8 modül 5 saatlik eğitim programı.", "credential_url": "https://toptalent.co/businessschool/verify", "image_file": "cert_borusan.png"}, {"title": "Otomotiv Yaz Kampı", "issuer": "OİB / OSD", "date": "03.07.2025", "category": "Katılım Sertifikası", "description": "30.06.2025–03.07.2025 tarihleri arasında çevrimiçi gerçekleştirilen Otomotiv Yaz Kampı'nda 15 oturumdan en az 12 oturuma katılım.", "credential_url": "https://dogrulama.ogrencikariyeri.com", "image_file": "cert_otomotiv.jpg"}, {"title": "Algoritma Tasarımı", "issuer": "BTK Akademi", "date": "02.05.2025", "category": "Python/Yazılım", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_algoritma.png"}, {"title": "STM32 ile Gömülü Yazılım Geliştirme", "issuer": "BTK Akademi", "date": "23.04.2025", "category": "Gömülü Sistemler", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_stm32.png"}, {"title": "AutoCAD ile 2D Tasarımlar", "issuer": "BTK Akademi", "date": "11.04.2025", "category": "FPGA/Donanım", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_autocad.png"}, {"title": "Bilgi Teknolojilerine Giriş", "issuer": "BTK Akademi", "date": "21.03.2025", "category": "Python/Yazılım", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_bilgi_teknoloji.png"}, {"title": "İkna Becerileri", "issuer": "BTK Akademi", "date": "06.03.2025", "category": "Python/Yazılım", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_ikna.png"}, {"title": "Problem Çözme Teknikleri", "issuer": "BTK Akademi", "date": "06.03.2025", "category": "Python/Yazılım", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_problem.png"}, {"title": "Girişimcilikte Sunum Teknikleri ve İletişim Yönetimi", "issuer": "BTK Akademi", "date": "02.03.2025", "category": "Python/Yazılım", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_girisim_sunum.png"}, {"title": "Tasarımların Korunması", "issuer": "BTK Akademi", "date": "02.03.2025", "category": "Python/Yazılım", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_tasarim.png"}, {"title": "Herkes için Yapay Zeka I", "issuer": "Kodluyoruz / ODTÜ / bilgeis.net", "date": "01.03.2025", "category": "Python/Yazılım", "description": "AB ve Türkiye Cumhuriyeti tarafından finanse edilen EMpower projesi kapsamında çevrim içi eğitim.", "credential_url": "https://bilgeis.net", "image_file": "cert_yapay_zeka_1.png"}, {"title": "C Programlama Dili", "issuer": "BTK Akademi", "date": "28.02.2025", "category": "Python/Yazılım", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_c_prog.png"}, {"title": "Yapay Zekaya Giriş", "issuer": "BTK Akademi", "date": "27.02.2025", "category": "Python/Yazılım", "description": "Bilgi Teknolojileri ve İletişim Kurumu tarafından sunulan çevrim içi eğitim.", "credential_url": "https://www.btkakademi.gov.tr", "image_file": "cert_yapay_zeka_giris.png"}];
+const CERT_IMAGES = {
+  "cert_matlab_onramp.jpg": "img/cert_matlab_onramp.webp",
+  "cert_ml_onramp.jpg": "img/cert_ml_onramp.webp",
+  "cert_borusan.png": "img/cert_borusan.webp",
+  "cert_otomotiv.jpg": "img/cert_otomotiv.webp",
+  "cert_algoritma.png": "img/cert_algoritma.webp",
+  "cert_stm32.png": "img/cert_stm32.webp",
+  "cert_autocad.png": "img/cert_autocad.webp",
+  "cert_bilgi_teknoloji.png": "img/cert_bilgi_teknoloji.webp",
+  "cert_ikna.png": "img/cert_ikna.webp",
+  "cert_problem.png": "img/cert_problem.webp",
+  "cert_girisim_sunum.png": "img/cert_girisim_sunum.webp",
+  "cert_tasarim.png": "img/cert_tasarim.webp",
+  "cert_yapay_zeka_1.png": "img/cert_yapay_zeka_1.webp",
+  "cert_c_prog.png": "img/cert_c_prog.webp",
+  "cert_yapay_zeka_giris.png": "img/cert_yapay_zeka_giris.webp",
+};
+
+const I18N_EN = {"nav_about": "🏠 About", "nav_exp": "💼 Experience", "nav_proj": "🚀 Projects", "nav_cert": "🏆 Certificates", "nav_contact": "📬 Contact", "hero_tag": "// Electrical & Electronics Engineer", "hero_sub": "FPGA Design · Embedded Systems · Python Development · Stock Market Analysis Tools", "about1": "A versatile professional who has built a broad perspective by gaining experience in different sectors from an early age, takes responsibility without hesitation and has a proactive approach. Thanks to my strong leadership qualities and aptitude for teamwork, I act result-oriented in projects and aim for continuous improvement and high quality in every task.", "about2": "With sharp observation skills and analytical thinking, I enjoy coming up with innovative solutions to complex problems. Alongside my engineering discipline, my deep interest in finance, economics and entrepreneurship drives me to keep expanding my knowledge in these areas and offer an <strong>interdisciplinary skill set</strong>.", "blog_label": "// Personal Blog", "blog_title": "Technology &amp; Software Blog", "edu_status": "4th Year · In Progress", "contact_email": "E-mail", "footer": "⚡ EE Engineer · 2025", "h_about": "About Me", "h_exp": "Experience", "h_proj": "Projects", "h_cert": "Certificates", "h_contact": "Contact", "h_edu": "Education", "all": "All", "none": "No projects found in this category.", "demo": "🔗 View Project", "gh": "🐙 View on GitHub", "verify": "🔗 Verify Certificate →", "noimg": "Image could not be loaded", "title": "Enes BOZ | EE Engineer", "e0": "Intern Engineer", "e1": "🏢 YEDAŞ · Yeşilırmak Electricity Distribution Co.", "e2": "July 2026 – August 2026", "e3": "Developed a system that detects vegetation encroachment around power lines and assesses infrastructure risk across the service area covering Çorum, Amasya, Samsun, Ordu and Sinop.", "e4": "Ran NDVI time-series analysis on line-corridor polygons with the Sentinel Hub Statistical API, reducing cloud-induced errors with the <em>leastCC</em> mosaicking order.", "e5": "Built a pipeline that flags problem areas with visual records, applies risk scoring and produces a prioritized report.", "e6": "Designed the PostGIS schema (power lines, poles, NDVI measurements, risk detections, field verifications) and added per-line query history and cloud-cover confidence badges to the Leaflet.js web interface.", "e7": "Developed a Flutter mobile app for verifying detections in the field.", "e8": "Full Stack Developer", "e9": "📱 uni101 · University social platform (for Marmara University students)", "e10": "December 2025 – Present", "e11": "Developing a social platform for university students end to end (mobile UI, database, security, notifications) as a solo developer with Flutter and Supabase.", "e12": "Conducted a Supabase RLS security audit, fixed database trigger bugs through live SQL diagnosis and managed schema changes with migrations.", "e13": "Built Instagram-style multi-account switching with secure session storage and async lock handling.", "e14": "Shipped features such as a badge-tier premium/donation system, an admin panel, TikTok/Instagram/LinkedIn/Twitter post embedding and Jamendo music integration.", "e15": "Improved feed performance (RepaintBoundary, caching) and simplified the codebase by splitting an ~8,000-line settings screen into 15 modular files.", "hb0": "AI Engineering", "hb1": "Machine Learning", "hb2": "Electricity Distribution Sector", "hb3": "Mobile App Development", "hb4": "Satellite &amp; Geospatial Data Analysis", "hb7": "STM32 / Embedded Systems", "proj_notice": "⏳ Some demos are hosted on free servers and may be asleep. If a project page doesn't load right away, please wake it up (e.g. press the \"Yes, get this app back up!\" button) and wait a few seconds.", "wip": "🚧 Development is still ongoing", "feat_h": "Featured", "all_h": "All Projects"};
+const PROJ_EN = {"1": ["Borsa Istanbul Technical Analysis Platform", "A full-featured analysis terminal built on Python that pulls real-time BIST stock data, calculates technical indicators (RSI, MACD, Bollinger Bands) and generates interactive charts.", "BIST Analysis Terminal"], "2": ["Borsa Istanbul Technical Analysis Telegram Bot", "A Telegram bot that runs automated technical analysis on Borsa Istanbul stocks and generates signals. Delivers buy/sell signals based on RSI, MACD and other indicators in real time via Telegram.", "BIST Signal Bot"], "3": ["A Smart Assistant That Points You to the Best-Fitting AI Solution", "A smart router application that analyzes your needs and recommends the most suitable AI tool, with a side-by-side evaluation of GPT, Claude, Gemini and other AI platforms.", "AI Router"], "4": ["A news site powered by AI that pulls live data with a range of added features", "A modern website with AI features integrated through APIs. A smart news platform that automatically fetches, summarizes and categorizes current news.", "AI-Powered Smart News Platform"], "5": ["FPGA / VHDL Source Code Analysis Tool", "A code analyzer that examines VHDL source code in FPGA projects and automatically reports resource usage, signals and connections.", "FPGA Code Analyzer"], "6": ["A Turkish blog on technology and software", "A personal blog with thoughts, guides and analyses on software, engineering, artificial intelligence and the world of technology.", "Technology & Software Blog"], "7": ["A modern English vocabulary learning app", "A modern vocabulary learning app covering the Oxford 5000 list, powered by the free Groq API. Includes a smart spaced-repetition system and AI-assisted explanations.", "Oxford 5000 Vocabulary App"], "8": ["AI-Powered Vehicle Valuation & Market Analysis Platform", "A platform that automatically detects body type, color, make and model year from a vehicle photo and predicts prices in real time with an XGBoost-based machine learning model. Offers Groq Vision API integration, market comparison and similar-vehicle suggestions.", "Vehicle Price Prediction Platform"], "9": ["Professional Market Analysis & Opportunity Radar for Mobile Startups", "A professional platform that performs comprehensive market analysis using Google Play Store data. Modules such as a category competition map, opportunity radar, competitive intelligence and revenue estimation give mobile app entrepreneurs strategic insights. Works on data from 1,250,000+ apps.", "AppVentures — Play Store Analyzer"], "10": ["Occupational Health & Safety Test Platform Built During the YEDAŞ Internship", "A web-based platform for taking online Occupational Health and Safety (OHS) tests, developed as part of my YEDAŞ internship.", "OHS Test Platform"], "11": ["AI-Powered Preliminary Symptom Assessment Assistant", "A chatbot that lets users describe their complaints in their own words, asks follow-up questions and offers a preliminary assessment across 41 possible conditions and 132 symptoms using a statistical model. It does not give a diagnosis; it helps users organize their symptoms before seeing a doctor.", "Health Chatbot"], "12": ["AI & Computer Vision Engineering Education Platform (ML Akademi)", "An education site offering a structured 22-module AI and computer vision curriculum, from Python fundamentals to YOLO-based object detection. Includes an interactive roadmap, optional side branches and a glossary.", "ML Education Website"], "13": ["OpenStreetMap-Based Electric Pole Placement Optimization", "A GIS-based Streamlit app that aims to optimize pole placement for power lines using the OpenStreetMap road network. It snaps routes to the road network, detects corners and junctions and simplifies freehand-drawn lines with Douglas-Peucker.", "PoleOptimizer Pro"], "14": ["Pole Tip Force Calculation from AutoCAD DXF Drawings", "An engineering app that reads AutoCAD DXF drawings, detects pole nodes and cable connections, calculates the resultant tip forces and recommends the suitable pole type (9 Ağaç, 10I, 12I, K Type).", "Pole Tip Force Analyzer"], "15": ["English Learning App", "An interactive Streamlit-based app I built for learning English.", "Master English"], "16": ["Interactive Guessing Game", "An interactive web game built with Streamlit where users make guesses.", "Guessing Game"], "17": ["Guess the Player, Collect the Points", "An interactive game built with Streamlit, based on guessing football players.", "Football Player Guessing Game"], "18": ["Crypto & Borsa Istanbul Analysis Tool", "A Streamlit-based app for analyzing cryptocurrency and Borsa Istanbul data in one place.", "Crypto & BIST Analysis App"]};
+const CAT_EN = {"Web / İçerik": "Web / Content", "Web / Eğitim": "Web / Education", "Python / Mühendislik": "Python / Engineering", "Python / Eğitim": "Python / Education", "Python / Oyun": "Python / Games"};
+const TAG_EN = {"Teknik Analiz": "Technical Analysis", "Yönlendirme": "Routing", "Karşılaştırma": "Comparison", "Otomatik": "Automated", "Sinyal": "Signals", "Kod Analiz": "Code Analysis", "Otomasyon": "Automation", "Yazılım": "Software", "Teknoloji": "Technology", "İçerik": "Content", "Haber": "News", "Kelime": "Vocabulary", "Makine Öğrenmesi": "Machine Learning", "Veri Analizi": "Data Analysis", "Pazar Analizi": "Market Analysis", "Veri Görselleştirme": "Data Visualization", "İSG": "OHS", "Test Platformu": "Test Platform", "Sağlık": "Health", "Eğitim": "Education", "Bilgisayarlı Görü": "Computer Vision", "Mühendislik Hesabı": "Engineering Calculation", "İngilizce": "English", "Oyun": "Game", "Futbol": "Football", "Kripto": "Crypto", "Analiz": "Analysis"};
+const CERT_EN = {"Borusan Teknoloji Okulu": ["Borusan Technology School", "An 8-module, 5-hour training program covering Artificial Intelligence, Machine Learning, Automotive Technologies, Software, Automation and Renewable Energy."], "Otomotiv Yaz Kampı": ["Automotive Summer Camp", "Attended at least 12 of 15 sessions at the online Automotive Summer Camp held between 30.06.2025 and 03.07.2025."], "Algoritma Tasarımı": ["Algorithm Design", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "STM32 ile Gömülü Yazılım Geliştirme": ["Embedded Software Development with STM32", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "AutoCAD ile 2D Tasarımlar": ["2D Designs with AutoCAD", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "Bilgi Teknolojilerine Giriş": ["Introduction to Information Technologies", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "İkna Becerileri": ["Persuasion Skills", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "Problem Çözme Teknikleri": ["Problem-Solving Techniques", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "Girişimcilikte Sunum Teknikleri ve İletişim Yönetimi": ["Presentation Techniques and Communication Management in Entrepreneurship", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "Tasarımların Korunması": ["Protection of Designs", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "Herkes için Yapay Zeka I": ["AI for Everyone I", "Online training within the EMpower project, funded by the EU and the Republic of Türkiye."], "C Programlama Dili": ["C Programming Language", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "Yapay Zekaya Giriş": ["Introduction to Artificial Intelligence", "Online course offered by the Information and Communication Technologies Authority (BTK)."], "MATLAB Onramp": ["MATLAB Onramp", "Completed 100% of the self-paced online MATLAB fundamentals course offered by MathWorks Training Services."], "Machine Learning Onramp": ["Machine Learning Onramp", "Completed 100% of the self-paced online machine learning fundamentals course with MATLAB offered by MathWorks Training Services."]};
+let lang = 'tr';
+const t = k => (lang === 'en' && I18N_EN[k]) || (I18N_TR[k] ?? '');
+const I18N_TR = {
+  all: 'Tümü', none: 'Bu kategoride proje bulunamadı.', demo: '🔗 Projeyi İncele', gh: "🐙 GitHub'da Gör",
+  verify: '🔗 Sertifikayı Doğrula →', wip: '🚧 Geliştirme süreci devam ediyor', noimg: 'Görsel yüklenemedi'
+};
+const pf = (p, f) => (lang === 'en' && PROJ_EN[p.id] && PROJ_EN[p.id][{subtitle:0,description:1,title:2}[f]]) ? PROJ_EN[p.id][{subtitle:0,description:1,title:2}[f]] : p[f];
+const pc = p => (lang === 'en' && CAT_EN[p.category]) || p.category;
+const tg = x => (lang === 'en' && TAG_EN[x]) || x;
+const cf = (c, f) => (lang === 'en' && CERT_EN[c.title]) ? CERT_EN[c.title][f === 'title' ? 0 : 1] : c[f];
+
+function setLang(l) {
+  lang = (l === 'en') ? 'en' : 'tr';
+  try { localStorage.setItem('cv-lang', lang); } catch (e) {}
+  document.documentElement.lang = lang;
+  document.title = lang === 'en' ? I18N_EN.title : I18N_TR.title;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.dataset.i18n;
+    el.innerHTML = lang === 'en' ? (I18N_EN[k] ?? I18N_TR[k]) : I18N_TR[k];
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  buildCatFilter();
+  filterProjects();
+  renderFeatured();
+  renderCerts();
+}
+
+function showPage(id, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function buildCatFilter() {
+  const sel0 = document.getElementById('catFilter');
+  const cur = sel0.value || 'Tümü';
+  const cats = ['Tümü', ...new Set(PROJECTS.map(p => p.category))].sort((a,b) => a==='Tümü'?-1:b==='Tümü'?1:a.localeCompare(b, 'tr'));
+  const sel = document.getElementById('catFilter');
+  sel.innerHTML = cats.map(c => `<option value="${c}">${c === 'Tümü' ? t('all') : ((lang === 'en' && CAT_EN[c]) || c)}</option>`).join('');
+  sel.value = cats.includes(cur) ? cur : 'Tümü';
+}
+
+function filterProjects() {
+  const sel = document.getElementById('catFilter').value;
+  const filtered = sel === 'Tümü' ? PROJECTS : PROJECTS.filter(p => p.category === sel);
+  renderProjects(filtered);
+}
+
+function cardHtml(p) {
+    const tags = p.tags.map(x => `<span class="tag">${tg(x)}</span>`).join('');
+    const hw = (p.hardware||[]).map(h => `<span class="tag tag-green">${h}</span>`).join('');
+    const btnDemo = p.demo_url ? `<a class="btn-link" href="${p.demo_url}" target="_blank">${t('demo')}</a>` : '';
+    const btnGh   = p.github_url ? `<a class="btn-link" href="${p.github_url}" target="_blank">${t('gh')}</a>` : '';
+    return `<div class="project-card">
+      <div class="card-category">${pc(p)}</div>
+      <div class="card-title">${pf(p,'title')}</div>
+      <div class="card-subtitle">${pf(p,'subtitle')}</div>
+      <div class="card-desc">${pf(p,'description')}</div>
+      ${p.wip ? `<div class="wip-note">${t('wip')}</div>` : ''}<div class="tag-row">${tags}</div>
+      ${hw ? `<div class="tag-row" style="margin-top:0.3rem;">${hw}</div>` : ''}
+      <div class="btn-row">${btnDemo}${btnGh}</div>
+    </div>`;
+  }
+
+function renderProjects(list) {
+  const grid = document.getElementById('projGrid');
+  list = list.filter(p => !p.featured);
+  if (!list.length) { grid.innerHTML = '<p style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.8rem;">'+t('none')+'</p>'; return; }
+  grid.innerHTML = list.map(cardHtml).join('');
+}
+
+function renderFeatured() {
+  document.getElementById('featGrid').innerHTML = PROJECTS.filter(p => p.featured).map(p => cardHtml(p).replace('class="project-card"', 'class="project-card featured"')).join('');
+}
+
+function renderCerts() {
+  const ICONS = {"FPGA/Donanım":"🔲","Python/Yazılım":"🐍","Gömülü Sistemler":"💾","Başarı Sertifikası":"🏆","Katılım Sertifikası":"📋","MATLAB/Mühendislik":"📐","Makine Öğrenmesi":"🤖"};
+  const list = document.getElementById('certList');
+  list.innerHTML = CERTS.map(c => {
+    const icon = ICONS[c.category] || '📄';
+    const imgSrc = CERT_IMAGES[c.image_file] || '';
+    const imgHtml = imgSrc
+      ? `<img class="cert-img" loading="lazy" src="${imgSrc}" alt="${cf(c,'title')}">`
+      : `<div style="background:var(--bg-card);border:1px dashed rgba(0,212,255,0.2);border-radius:4px;padding:2rem;text-align:center;color:var(--text-muted);font-family:'Space Mono';font-size:0.75rem;">${t('noimg')}</div>`;
+    return `<div>
+      <div class="cert-row">
+        <div class="cert-card">
+          <div class="cert-icon">${icon}</div>
+          <div>
+            <div class="cert-title">${cf(c,'title')}</div>
+            <div class="cert-issuer">📌 ${c.issuer} · ${c.date}</div>
+            <div class="cert-desc">${cf(c,'description')}</div>
+            <a class="cert-link" href="${c.credential_url}" target="_blank">${t('verify')}</a>
+          </div>
+        </div>
+        <div>${imgHtml}</div>
+      </div>
+      <hr class="divider">
+    </div>`;
+  }).join('');
+}
+
+(function initI18n() {
+  // Capture the Turkish source text of every translatable element
+  document.querySelectorAll('[data-i18n]').forEach(el => { I18N_TR[el.dataset.i18n] = el.innerHTML; });
+  I18N_TR.title = document.title;
+  let saved = 'tr';
+  try { saved = localStorage.getItem('cv-lang') || 'tr'; } catch (e) {}
+  setLang(saved);
+})();
+</script>
+<script>
+// Kurucu bölümünden gelen #deneyimler, #projeler vb. bağlantıları ilgili sayfayı açar
+(function () {
+  var id = (location.hash || '').slice(1);
+  if (!id) return;
+  var btn = document.querySelector('.nav-btn[onclick*="showPage(\'' + id + '\'"]');
+  if (btn) btn.click();
+})();
+</script>
+</body>
+</html>

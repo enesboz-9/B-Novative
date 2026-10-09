@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://bnovative.com.tr/sitemap.xml

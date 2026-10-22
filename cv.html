@@ -660,7 +660,7 @@ function cardHtml(p) {
     const tags = p.tags.map(x => `<span class="tag">${tg(x)}</span>`).join('');
     const hw = (p.hardware||[]).map(h => `<span class="tag tag-green">${h}</span>`).join('');
     const btnDemo = p.demo_url ? `<a class="btn-link" href="${p.demo_url}" target="_blank">${t('demo')}</a>` : '';
-    const btnPage = p.page_url ? `<a class="btn-link" href="${p.page_url}">Detay</a>` : '';
+    const btnPage = p.page_url ? `<a class="btn-link" href="${p.page_url}">haberAI</a>` : '';
     const btnGh   = p.github_url ? `<a class="btn-link" href="${p.github_url}" target="_blank">${t('gh')}</a>` : '';
     return `<div class="project-card">
       <div class="card-category">${pc(p)}</div>

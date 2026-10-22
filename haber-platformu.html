@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Destekli Akıllı Haber Platformu | B-Novative</title>
+<meta name="description" content="Güncel haberleri otomatik çeken, yapay zekâ ile özetleyen ve kategorize eden akıllı haber platformu. Python ve Streamlit ile geliştirildi; canlı demoyu hemen deneyin.">
+<meta name="author" content="Enes Boz">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://bnovative.com.tr/haber-platformu.html">
+<meta property="og:title" content="AI Destekli Akıllı Haber Platformu">
+<meta property="og:description" content="Güncel haberleri otomatik çeken, özetleyen ve kategorize eden yapay zekâ destekli haber platformu.">
+<meta property="og:url" content="https://bnovative.com.tr/haber-platformu.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://bnovative.com.tr/enes-boz.jpg">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://bnovative.com.tr/haber-platformu.html#app",
+      "name": "AI Destekli Akıllı Haber Platformu",
+      "alternateName": "B-Novative Haber Platformu",
+      "description": "Güncel haberleri API üzerinden otomatik çeken, yapay zekâ ile özetleyen ve kategorize eden web tabanlı haber platformu.",
+      "applicationCategory": "NewsApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr",
+      "url": "https://newsapp-nbjpwfaw7ezfvappvzkj2iy.streamlit.app/",
+      "mainEntityOfPage": "https://bnovative.com.tr/haber-platformu.html",
+      "codeRepository": "https://github.com/enesboz-9/news.app",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
+      "author": { "@type": "Person", "@id": "https://bnovative.com.tr/cv.html#person", "name": "Enes Boz", "url": "https://bnovative.com.tr/cv.html" },
+      "publisher": { "@type": "Organization", "@id": "https://bnovative.com.tr/#org", "name": "B-Novative", "url": "https://bnovative.com.tr/" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "B-Novative", "item": "https://bnovative.com.tr/" },
+        { "@type": "ListItem", "position": 2, "name": "AI Destekli Akıllı Haber Platformu", "item": "https://bnovative.com.tr/haber-platformu.html" }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-192x192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root { --ink:#0B0B0F; --muted:#5B6170; --line:#E6E8EE; --accent:#1F4BFF; --accent-soft:#EEF2FF; --bg:#FFFFFF; --soft:#F6F7FA; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#F4F5F8; --muted:#9AA2B3; --line:#252A37; --accent:#5C82FF; --accent-soft:#18213D; --bg:#0B0C10; --soft:#12141B; color-scheme: dark; }
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:"Inter",Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  a { color:var(--accent); }
+  .wrap { max-width:820px; margin:0 auto; padding:0 20px; }
+  header { border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; justify-content:space-between; align-items:center; height:64px; }
+  header a { color:var(--ink); text-decoration:none; font-weight:600; }
+  nav a { font-weight:500; font-size:15px; margin-left:20px; color:var(--muted); }
+  nav a:hover { color:var(--accent); }
+  .crumbs { font-size:14px; color:var(--muted); padding:28px 0 0; }
+  .crumbs a { color:var(--muted); }
+  h1 { font-size:clamp(30px,5vw,44px); line-height:1.15; margin:14px 0 18px; letter-spacing:-.02em; }
+  .lead { font-size:19px; color:var(--muted); }
+  .actions { display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 8px; }
+  .btn { display:inline-block; padding:14px 26px; border-radius:999px; background:var(--ink); color:var(--bg); text-decoration:none; font-weight:600; font-size:15px; }
+  .btn:hover { background:var(--accent); color:#fff; }
+  .btn-ghost { background:transparent; color:var(--ink); border:1px solid var(--line); }
+  .btn-ghost:hover { background:transparent; color:var(--accent); border-color:var(--accent); }
+  section { padding:44px 0 0; }
+  h2 { font-size:24px; margin-bottom:14px; letter-spacing:-.01em; }
+  p + p { margin-top:12px; }
+  ul.feat { display:grid; gap:12px; list-style:none; }
+  ul.feat li { padding:16px 18px; background:var(--soft); border:1px solid var(--line); border-radius:12px; }
+  ul.feat strong { display:block; margin-bottom:2px; }
+  .tags { display:flex; flex-wrap:wrap; gap:8px; }
+  .tags span { padding:5px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent); font-size:13px; font-weight:600; }
+  footer { margin-top:64px; border-top:1px solid var(--line); padding:26px 0; color:var(--muted); font-size:14px; }
+  footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="/">B-Novative</a>
+    <nav><a href="/">Ana sayfa</a><a href="/cv.html#projeler">Projeler</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="crumbs"><a href="/">B-Novative</a> › Haber Platformu</div>
+  <h1>AI Destekli Akıllı Haber Platformu</h1>
+  <p class="lead">Güncel haberleri otomatik olarak çeken, yapay zekâ ile özetleyen ve kategorize eden, tarayıcıda çalışan akıllı haber platformu.</p>
+  <div class="actions">
+    <a class="btn" href="https://newsapp-nbjpwfaw7ezfvappvzkj2iy.streamlit.app/" rel="noopener">Canlı demoyu aç &rarr;</a>
+    <a class="btn btn-ghost" href="https://github.com/enesboz-9/news.app" rel="noopener">GitHub'da kaynak kod</a>
+  </div>
+
+  <section>
+    <h2>Nedir?</h2>
+    <p>AI Destekli Akıllı Haber Platformu, API üzerinden güncel haber verisini toplayan ve yapay zekâ özelliklerini bu akışa entegre eden modern bir web uygulamasıdır. Amaç, çok sayıda haber arasında zaman kaybetmeden önemli olanı hızlıca görebilmektir.</p>
+    <p>Uygulama Python ve Streamlit ile geliştirilmiştir; kurulum gerektirmez, doğrudan tarayıcıdan kullanılır.</p>
+  </section>
+
+  <section>
+    <h2>Öne çıkan özellikler</h2>
+    <ul class="feat">
+      <li><strong>Otomatik haber çekme</strong>Güncel haberler API üzerinden otomatik olarak alınır.</li>
+      <li><strong>Yapay zekâ ile özetleme</strong>Uzun haber metinleri kısa ve okunması kolay özetlere dönüştürülür.</li>
+      <li><strong>Kategorize etme</strong>Haberler konularına göre gruplanır, böylece ilgi alanınıza hızlıca ulaşırsınız.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Kullanılan teknolojiler</h2>
+    <div class="tags"><span>Python</span><span>Streamlit</span><span>REST API</span><span>Yapay Zekâ</span><span>NLP</span></div>
+  </section>
+
+  <section>
+    <h2>Geliştirici</h2>
+    <p>Proje, <a href="/">B-Novative</a> kurucusu <a href="/cv.html">Enes Boz</a> tarafından geliştirilmiştir. Diğer projeleri <a href="/cv.html#projeler">özgeçmiş sayfasında</a> inceleyebilirsiniz.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 B-Novative. Tüm hakları saklıdır.</span>
+    <a href="mailto:bnovative.destek@gmail.com">bnovative.destek@gmail.com</a>
+  </div>
+</footer>
+</body>
+</html>

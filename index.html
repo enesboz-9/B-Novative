@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>B-Novative | Teknoloji ve İnovasyon</title>
-<meta name="description" content="B-Novative; yazılım, veri ve akıllı sistemler alanında fikirleri çalışan projelere dönüştüren bir teknoloji ve inovasyon şirketidir.">
+<meta name="description" content="B-Novative; mobil, web, oyun, görüntü işleme ve yapay zeka alanlarında hizmet veren bir teknoloji ve inovasyon şirketidir.">
 <meta property="og:title" content="B-Novative | Fikirden çözüme">
-<meta property="og:description" content="Teknoloji ve inovasyon alanında yazılım, veri ve akıllı sistem çözümleri.">
+<meta property="og:description" content="Mobil, web, oyun, görüntü işleme ve yapay zeka alanlarında teknoloji ve inovasyon çözümleri.">
 <meta property="og:url" content="https://bnovative.com.tr/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
@@ -204,6 +204,24 @@
     background: var(--accent); opacity: .85;
   }
 
+  /* Areas chips */
+  .areas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  .areas span {
+    padding: 9px 18px; border-radius: 999px; background: var(--accent-soft); color: var(--accent);
+    font-size: 14px; font-weight: 700; letter-spacing: -0.01em;
+  }
+
+  /* References */
+  a.service.ref { display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+  .ref .ref-tag { font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: .08em; text-transform: uppercase; }
+  .ref .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .ref .tags span {
+    font-size: 12px; font-weight: 600; padding: 5px 11px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--ink-2); background: var(--soft);
+  }
+  .ref .go { margin-top: auto; padding-top: 28px; font-size: 15px; font-weight: 700; color: var(--ink); }
+  .ref:hover .go { color: var(--accent); }
+
   /* Founder */
   .founder-grid { display: grid; grid-template-columns: 240px 1fr; gap: 64px; align-items: center; }
   .photo-wrap { position: relative; max-width: 240px; }
@@ -382,7 +400,7 @@
     </a>
     <nav>
       <a href="#hakkimizda">Hakkımızda</a>
-      <a href="#hizmetler">Hizmetler</a>
+      <a href="#referanslar">Referanslar</a>
       <a href="#kurucu">Kurucu</a>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Açık / koyu temayı değiştir">◐</button>
       <a href="#iletisim" class="nav-cta">İletişim</a>
@@ -399,10 +417,10 @@
       <div>
         <span class="eyebrow">Teknoloji · İnovasyon</span>
         <h1><span class="w" style="--i:0">Fikirden</span> <span class="w" style="--i:1"><em>çözüme</em></span><span class="w" style="--i:2">.</span></h1>
-        <p class="lead">B-Novative; yazılım, veri ve akıllı sistemler alanında fikirleri ölçülebilir değere dönüştüren bir teknoloji ve inovasyon şirketidir.</p>
+        <p class="lead">B-Novative; mobil, web, oyun, görüntü işleme ve yapay zeka alanlarında hizmet veren, fikirleri ölçülebilir değere dönüştüren bir teknoloji ve inovasyon şirketidir.</p>
         <div class="actions">
           <a class="btn" href="#iletisim">Projenizi konuşalım &rarr;</a>
-          <a class="btn-ghost" href="#hizmetler">Hizmetlerimiz</a>
+          <a class="btn-ghost" href="#referanslar">Referans projeler</a>
         </div>
       </div>
       <div class="hero-mark" aria-hidden="true">
@@ -420,8 +438,8 @@
 
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>Yazılım</span><span>Mobil Uygulama</span><span>Veri Analitiği</span><span>Yapay Zeka</span><span>Uzaktan Algılama</span><span>Coğrafi Bilgi Sistemleri</span>
-      <span>Yazılım</span><span>Mobil Uygulama</span><span>Veri Analitiği</span><span>Yapay Zeka</span><span>Uzaktan Algılama</span><span>Coğrafi Bilgi Sistemleri</span>
+      <span>Mobil</span><span>Web</span><span>Oyun</span><span>Görüntü İşleme</span><span>Yapay Zeka</span>
+      <span>Mobil</span><span>Web</span><span>Oyun</span><span>Görüntü İşleme</span><span>Yapay Zeka</span>
     </div>
   </div>
 
@@ -431,6 +449,7 @@
         <div class="label">Hakkımızda</div>
         <h2>Yeni fikirleri, ölçülebilir değere çeviriyoruz.</h2>
         <p class="lead-2">Kendi ürünlerimizi geliştirdiğimiz gibi, iş birliği yaptığımız kurumlar için de özel çözümler tasarlıyoruz. Yaklaşımımız; kullanıcıyı merkeze alan tasarım, sağlam mühendislik ve sürekli iyileştirme üzerine kurulu.</p>
+        <div class="areas" aria-label="Hizmet alanlarımız"><span>Mobil</span><span>Web</span><span>Oyun</span><span>Görüntü İşleme</span><span>Yapay Zeka</span></div>
       </div>
       <div class="about-points reveal from-right">
         <div class="point">
@@ -458,43 +477,34 @@
     </div>
   </section>
 
-  <section id="hizmetler" class="alt">
+  <section id="referanslar" class="alt">
     <div class="wrap">
       <div class="reveal">
-        <div class="label">Hizmetler</div>
-        <h2>Üç alanda, uçtan uca çözümler.</h2>
+        <div class="label">Referans Projeler</div>
+        <h2>Geliştirdiğimiz ürünlerden örnekler.</h2>
       </div>
       <div class="services">
-        <div class="service reveal zoom" style="--d:0ms">
-          <div class="num">01</div>
-          <h3>Yazılım ve Mobil Uygulamalar</h3>
-          <p>Web ve mobil platformlar için ölçeklenebilir, güvenli ve kullanıcı dostu uygulamalar geliştiriyoruz.</p>
-          <ul>
-            <li>Mobil uygulama geliştirme</li>
-            <li>Web platformları</li>
-            <li>Backend ve veritabanı mimarisi</li>
-          </ul>
-        </div>
-        <div class="service reveal zoom" style="--d:150ms">
-          <div class="num">02</div>
-          <h3>Veri ve Yapay Zeka</h3>
-          <p>Veri hatlarını kuruyor, makine öğrenmesi modelleri ile karar destek sistemleri oluşturuyoruz.</p>
-          <ul>
-            <li>Veri hatları ve analitik</li>
-            <li>Makine öğrenmesi modelleri</li>
-            <li>Karar destek sistemleri</li>
-          </ul>
-        </div>
-        <div class="service reveal zoom" style="--d:300ms">
-          <div class="num">03</div>
-          <h3>Uzaktan Algılama ve Coğrafi Bilgi</h3>
-          <p>Uydu verileri ve coğrafi analizlerle altyapı, çevre ve saha operasyonlarına görünürlük sağlıyoruz.</p>
-          <ul>
-            <li>Uydu görüntü analizi</li>
-            <li>Coğrafi bilgi sistemleri (CBS)</li>
-            <li>Saha operasyonları için uygulamalar</li>
-          </ul>
-        </div>
+        <a class="service ref reveal zoom" style="--d:0ms" href="https://enesboz-9.github.io/uniconnect/" target="_blank" rel="noopener">
+          <div class="ref-tag">Mobil · Sosyal Platform</div>
+          <h3>uni101</h3>
+          <p>Kurumsal .edu e-postasıyla doğrulanan üniversite öğrencileri için akış, sohbet odaları, akademik wiki ve marketplace sunan sosyal platform.</p>
+          <div class="tags"><span>Flutter</span><span>Supabase</span><span>Mobil</span></div>
+          <div class="go">Projeyi incele &rarr;</div>
+        </a>
+        <a class="service ref reveal zoom" style="--d:150ms" href="https://ederine.bnovative.com.tr" target="_blank" rel="noopener">
+          <div class="ref-tag">Web · Görüntü İşleme</div>
+          <h3>EderiNe</h3>
+          <p>Araç fotoğrafından marka, model ve kasa tipini tespit eden; hasar bilgisiyle birlikte yapay zeka destekli değer tahmini sunan araç değerleme platformu.</p>
+          <div class="tags"><span>Görüntü İşleme</span><span>Yapay Zeka</span><span>Web</span></div>
+          <div class="go">Projeyi incele &rarr;</div>
+        </a>
+        <a class="service ref reveal zoom" style="--d:300ms" href="https://haberai.bnovative.com.tr/" target="_blank" rel="noopener">
+          <div class="ref-tag">Web · Yapay Zeka</div>
+          <h3>haberAI</h3>
+          <p>Güncel haberleri otomatik çeken, yapay zeka ile özetleyen ve kategorize eden akıllı haber platformu.</p>
+          <div class="tags"><span>Yapay Zeka</span><span>Python</span><span>Web</span></div>
+          <div class="go">Projeyi incele &rarr;</div>
+        </a>
       </div>
     </div>
   </section>
@@ -512,16 +522,6 @@
         <div class="label">Kurucu</div>
         <h3>Enes Boz</h3>
         <div class="role">Kurucu</div>
-        <p class="bio">Enes Boz, Marmara Üniversitesi Elektrik-Elektronik Mühendisliği öğrencisi ve B-Novative'in kurucusudur. Yazılım geliştirme, coğrafi bilgi sistemleri ve makine öğrenmesi alanlarında projeler yürütüyor. B-Novative'i; teknolojiyi sahada işe yarar çözümlere dönüştürme inancıyla kurdu.</p>
-        <p class="quote">"Teknoloji ancak insanlara gerçek bir fayda sağladığında anlamlıdır."</p>
-        <div class="cv-links" style="margin-top:30px;display:grid;gap:12px">
-          <a class="btn-ghost" href="cv.html" style="justify-self:start">Özgeçmiş &rarr;</a>
-          <a href="cv.html#hakkimda" style="color:var(--muted);font-size:15px">Hakkımda</a>
-          <a href="cv.html#deneyimler" style="color:var(--muted);font-size:15px">Deneyimler</a>
-          <a href="cv.html#projeler" style="color:var(--muted);font-size:15px">Projeler</a>
-          <a href="cv.html#sertifikalar" style="color:var(--muted);font-size:15px">Sertifikalar</a>
-          <a href="haber-platformu.html" style="color:var(--muted);font-size:15px">haberAI – AI Haber Platformu</a>
-        </div>
       </div>
     </div>
   </section>

@@ -164,6 +164,7 @@
   .hero-mark svg { width: 100%; max-width: 380px; height: auto; }
 
   /* Sections */
+  html, body { overflow-x: clip; }
   section { padding: 120px 0; }
   .alt { background: var(--soft); }
   .label {
@@ -222,6 +223,13 @@
   .ref .go { margin-top: auto; padding-top: 28px; font-size: 15px; font-weight: 700; color: var(--ink); }
   .ref:hover .go { color: var(--accent); }
 
+  /* Language toggle */
+  .lang-toggle {
+    height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: transparent;
+    color: var(--ink); cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: .06em; font-family: inherit;
+  }
+  .lang-toggle:hover { border-color: var(--ink); }
+
   /* Founder */
   .founder-grid { display: grid; grid-template-columns: 240px 1fr; gap: 64px; align-items: center; }
   .photo-wrap { position: relative; max-width: 240px; }
@@ -237,6 +245,14 @@
   .photo-badge span { font-size: 13px; color: var(--muted); }
   .founder h3 { font-size: 30px; letter-spacing: -0.03em; margin-top: 4px; font-weight: 800; }
   .founder .role { color: var(--accent); font-weight: 700; font-size: 15px; margin-top: 6px; }
+  .founder-line { margin-top: 22px; color: var(--muted); font-size: 17px; max-width: 460px; }
+  .social { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+  .social a {
+    display: inline-flex; align-items: center; gap: 10px; padding: 11px 18px; border: 1px solid var(--line);
+    border-radius: 999px; color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 600;
+    transition: border-color .2s, color .2s, transform .2s;
+  }
+  .social a:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
   .founder .bio { margin-top: 26px; color: var(--muted); font-size: 17px; }
   .quote {
     margin-top: 34px; padding: 26px 30px; border-left: 3px solid var(--accent); background: var(--soft);
@@ -261,6 +277,8 @@
     background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 16px;
     color: #fff; text-decoration: none; font-size: 16px; font-weight: 500;
   }
+  .contact-box > * { min-width: 0; }
+  .contact-list a { flex-wrap: wrap; gap: 4px 12px; overflow-wrap: anywhere; }
   .contact-list a:hover { background: rgba(255,255,255,.12); transform: translateX(4px); }
   .contact-list a small { color: rgba(255,255,255,.55); font-size: 13px; font-weight: 400; }
 
@@ -376,6 +394,11 @@
   }
   @media (max-width: 640px) {
     nav a:not(.nav-cta) { display: none; }
+    nav { gap: 8px; }
+    .lang-toggle, .theme-toggle { height: 36px; }
+    .theme-toggle { width: 36px; }
+    .lang-toggle { padding: 0 11px; }
+    .nav-cta { padding: 10px 14px; }
     .founder h3 { font-size: 28px; }
   }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -399,11 +422,12 @@
       </svg>
     </a>
     <nav>
-      <a href="#hakkimizda">Hakkımızda</a>
-      <a href="#referanslar">Referanslar</a>
-      <a href="#kurucu">Kurucu</a>
+      <a href="#hakkimizda" data-i18n="k0">Hakkımızda</a>
+      <a href="#referanslar" data-i18n="k1">Referanslar</a>
+      <a href="#kurucu" data-i18n="k2">Kurucu</a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Dil / Language">EN</button>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Açık / koyu temayı değiştir">◐</button>
-      <a href="#iletisim" class="nav-cta">İletişim</a>
+      <a href="#iletisim" class="nav-cta" data-i18n="k3">İletişim</a>
     </nav>
   </div>
 </header>
@@ -415,12 +439,12 @@
     <div class="blob b2" aria-hidden="true"></div>
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Teknoloji · İnovasyon</span>
-        <h1><span class="w" style="--i:0">Fikirden</span> <span class="w" style="--i:1"><em>çözüme</em></span><span class="w" style="--i:2">.</span></h1>
-        <p class="lead">B-Novative; mobil, web, oyun, görüntü işleme ve yapay zeka alanlarında hizmet veren, fikirleri ölçülebilir değere dönüştüren bir teknoloji ve inovasyon şirketidir.</p>
+        <span class="eyebrow" data-i18n="k4">Teknoloji · İnovasyon</span>
+        <h1><span class="w" style="--i:0" data-i18n="k5">Fikirden</span> <span class="w" style="--i:1"><em data-i18n="k6">çözüme</em></span><span class="w" style="--i:2">.</span></h1>
+        <p class="lead" data-i18n="k7">B-Novative; mobil, web, oyun, görüntü işleme ve yapay zeka alanlarında hizmet veren, fikirleri ölçülebilir değere dönüştüren bir teknoloji ve inovasyon şirketidir.</p>
         <div class="actions">
-          <a class="btn" href="#iletisim">Projenizi konuşalım &rarr;</a>
-          <a class="btn-ghost" href="#referanslar">Referans projeler</a>
+          <a class="btn" href="#iletisim" data-i18n="k8">Projenizi konuşalım &rarr;</a>
+          <a class="btn-ghost" href="#referanslar" data-i18n="k9">Referans projeler</a>
         </div>
       </div>
       <div class="hero-mark" aria-hidden="true">
@@ -438,39 +462,39 @@
 
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>Mobil</span><span>Web</span><span>Oyun</span><span>Görüntü İşleme</span><span>Yapay Zeka</span>
-      <span>Mobil</span><span>Web</span><span>Oyun</span><span>Görüntü İşleme</span><span>Yapay Zeka</span>
+      <span data-i18n="k10">Mobil</span><span data-i18n="k11">Web</span><span data-i18n="k12">Oyun</span><span data-i18n="k13">Görüntü İşleme</span><span data-i18n="k14">Yapay Zeka</span>
+      <span data-i18n="k10">Mobil</span><span data-i18n="k11">Web</span><span data-i18n="k12">Oyun</span><span data-i18n="k13">Görüntü İşleme</span><span data-i18n="k14">Yapay Zeka</span>
     </div>
   </div>
 
   <section id="hakkimizda">
     <div class="wrap about-grid">
       <div class="reveal from-left">
-        <div class="label">Hakkımızda</div>
-        <h2>Yeni fikirleri, ölçülebilir değere çeviriyoruz.</h2>
-        <p class="lead-2">Kendi ürünlerimizi geliştirdiğimiz gibi, iş birliği yaptığımız kurumlar için de özel çözümler tasarlıyoruz. Yaklaşımımız; kullanıcıyı merkeze alan tasarım, sağlam mühendislik ve sürekli iyileştirme üzerine kurulu.</p>
-        <div class="areas" aria-label="Hizmet alanlarımız"><span>Mobil</span><span>Web</span><span>Oyun</span><span>Görüntü İşleme</span><span>Yapay Zeka</span></div>
+        <div class="label" data-i18n="k0">Hakkımızda</div>
+        <h2 data-i18n="k15">Yeni fikirleri, ölçülebilir değere çeviriyoruz.</h2>
+        <p class="lead-2" data-i18n="k16">Kendi ürünlerimizi geliştirdiğimiz gibi, iş birliği yaptığımız kurumlar için de özel çözümler tasarlıyoruz. Yaklaşımımız; kullanıcıyı merkeze alan tasarım, sağlam mühendislik ve sürekli iyileştirme üzerine kurulu.</p>
+        <div class="areas" aria-label="Hizmet alanlarımız"><span data-i18n="k10">Mobil</span><span data-i18n="k11">Web</span><span data-i18n="k12">Oyun</span><span data-i18n="k13">Görüntü İşleme</span><span data-i18n="k14">Yapay Zeka</span></div>
       </div>
       <div class="about-points reveal from-right">
         <div class="point">
           <div class="ic">01</div>
           <div>
-            <h4>Kullanıcı odaklı tasarım</h4>
-            <p>Her ürünü, son kullanıcının ihtiyacından yola çıkarak tasarlıyoruz.</p>
+            <h4 data-i18n="k17">Kullanıcı odaklı tasarım</h4>
+            <p data-i18n="k18">Her ürünü, son kullanıcının ihtiyacından yola çıkarak tasarlıyoruz.</p>
           </div>
         </div>
         <div class="point">
           <div class="ic">02</div>
           <div>
-            <h4>Sağlam mühendislik</h4>
-            <p>Ölçeklenebilir, güvenli ve sürdürülebilir mimariler kuruyoruz.</p>
+            <h4 data-i18n="k19">Sağlam mühendislik</h4>
+            <p data-i18n="k20">Ölçeklenebilir, güvenli ve sürdürülebilir mimariler kuruyoruz.</p>
           </div>
         </div>
         <div class="point">
           <div class="ic">03</div>
           <div>
-            <h4>Sürekli inovasyon</h4>
-            <p>Yeni teknolojileri, sahadan gelen geri bildirimlerle sınayarak uyguluyoruz.</p>
+            <h4 data-i18n="k21">Sürekli inovasyon</h4>
+            <p data-i18n="k22">Yeni teknolojileri, sahadan gelen geri bildirimlerle sınayarak uyguluyoruz.</p>
           </div>
         </div>
       </div>
@@ -480,30 +504,30 @@
   <section id="referanslar" class="alt">
     <div class="wrap">
       <div class="reveal">
-        <div class="label">Referans Projeler</div>
-        <h2>Geliştirdiğimiz ürünlerden örnekler.</h2>
+        <div class="label" data-i18n="k23">Referans Projeler</div>
+        <h2 data-i18n="k24">Geliştirdiğimiz ürünlerden örnekler.</h2>
       </div>
       <div class="services">
         <a class="service ref reveal zoom" style="--d:0ms" href="https://enesboz-9.github.io/uniconnect/" target="_blank" rel="noopener">
-          <div class="ref-tag">Mobil · Sosyal Platform</div>
+          <div class="ref-tag" data-i18n="k25">Mobil · Sosyal Platform</div>
           <h3>uni101</h3>
-          <p>Kurumsal .edu e-postasıyla doğrulanan üniversite öğrencileri için akış, sohbet odaları, akademik wiki ve marketplace sunan sosyal platform.</p>
-          <div class="tags"><span>Flutter</span><span>Supabase</span><span>Mobil</span></div>
-          <div class="go">Projeyi incele &rarr;</div>
+          <p data-i18n="k26">Kurumsal .edu e-postasıyla doğrulanan üniversite öğrencileri için akış, sohbet odaları, akademik wiki ve marketplace sunan sosyal platform.</p>
+          <div class="tags"><span>Flutter</span><span>Supabase</span><span data-i18n="k10">Mobil</span></div>
+          <div class="go" data-i18n="k31">Projeyi incele &rarr;</div>
         </a>
         <a class="service ref reveal zoom" style="--d:150ms" href="https://ederine.bnovative.com.tr" target="_blank" rel="noopener">
-          <div class="ref-tag">Web · Görüntü İşleme</div>
+          <div class="ref-tag" data-i18n="k27">Web · Görüntü İşleme</div>
           <h3>EderiNe</h3>
-          <p>Araç fotoğrafından marka, model ve kasa tipini tespit eden; hasar bilgisiyle birlikte yapay zeka destekli değer tahmini sunan araç değerleme platformu.</p>
-          <div class="tags"><span>Görüntü İşleme</span><span>Yapay Zeka</span><span>Web</span></div>
-          <div class="go">Projeyi incele &rarr;</div>
+          <p data-i18n="k28">Araç fotoğrafından marka, model ve kasa tipini tespit eden; hasar bilgisiyle birlikte yapay zeka destekli değer tahmini sunan araç değerleme platformu.</p>
+          <div class="tags"><span data-i18n="k13">Görüntü İşleme</span><span data-i18n="k14">Yapay Zeka</span><span data-i18n="k11">Web</span></div>
+          <div class="go" data-i18n="k31">Projeyi incele &rarr;</div>
         </a>
         <a class="service ref reveal zoom" style="--d:300ms" href="https://haberai.bnovative.com.tr/" target="_blank" rel="noopener">
-          <div class="ref-tag">Web · Yapay Zeka</div>
+          <div class="ref-tag" data-i18n="k29">Web · Yapay Zeka</div>
           <h3>haberAI</h3>
-          <p>Güncel haberleri otomatik çeken, yapay zeka ile özetleyen ve kategorize eden akıllı haber platformu.</p>
-          <div class="tags"><span>Yapay Zeka</span><span>Python</span><span>Web</span></div>
-          <div class="go">Projeyi incele &rarr;</div>
+          <p data-i18n="k30">Güncel haberleri otomatik çeken, yapay zeka ile özetleyen ve kategorize eden akıllı haber platformu.</p>
+          <div class="tags"><span data-i18n="k14">Yapay Zeka</span><span>Python</span><span data-i18n="k11">Web</span></div>
+          <div class="go" data-i18n="k31">Projeyi incele &rarr;</div>
         </a>
       </div>
     </div>
@@ -515,13 +539,24 @@
         <img src="enes-boz.jpg" alt="Enes Boz, B-Novative kurucusu" loading="lazy">
         <div class="photo-badge">
           <strong>Enes Boz</strong>
-          <span>Kurucu</span>
+          <span data-i18n="k2">Kurucu</span>
         </div>
       </div>
       <div class="reveal from-right">
-        <div class="label">Kurucu</div>
+        <div class="label" data-i18n="k2">Kurucu</div>
         <h3>Enes Boz</h3>
-        <div class="role">Kurucu</div>
+        <div class="role" data-i18n="k2">Kurucu</div>
+        <p class="founder-line" data-i18n="k32">B-Novative'in kurucusu. Teknolojiyi sahada işe yarayan çözümlere dönüştürüyor.</p>
+        <div class="social">
+          <a href="https://github.com/enesboz-9" target="_blank" rel="noopener me" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/enesboz-00e" target="_blank" rel="noopener me" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -530,13 +565,13 @@
     <div class="wrap">
       <div class="contact-box reveal zoom">
         <div>
-          <div class="label">İletişim</div>
-          <h2>Bir projeniz mi var?</h2>
-          <p>Fikrinizi birlikte konuşalım. Ön görüşme ve teknik değerlendirme için bize yazın.</p>
+          <div class="label" data-i18n="k3">İletişim</div>
+          <h2 data-i18n="k33">Bir projeniz mi var?</h2>
+          <p data-i18n="k34">Fikrinizi birlikte konuşalım. Ön görüşme ve teknik değerlendirme için bize yazın.</p>
         </div>
         <div class="contact-list">
-          <a href="mailto:bnovative.destek@gmail.com">bnovative.destek@gmail.com <small>E-posta</small></a>
-          <a href="#">İstanbul, Türkiye <small>Konum</small></a>
+          <a href="mailto:bnovative.destek@gmail.com">bnovative.destek@gmail.com <small data-i18n="k35">E-posta</small></a>
+          <a href="#">İstanbul, Türkiye <small data-i18n="k36">Konum</small></a>
         </div>
       </div>
     </div>
@@ -546,12 +581,43 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 B-Novative. Tüm hakları saklıdır.</span>
+    <span data-i18n="k37">© 2026 B-Novative. Tüm hakları saklıdır.</span>
     <span>bnovative.com.tr</span>
   </div>
 </footer>
 
 <script>
+
+  // Language (TR / EN)
+  const EN = {"k0": "About", "k1": "References", "k2": "Founder", "k3": "Contact", "k4": "Technology · Innovation", "k5": "From idea to", "k6": "solution", "k7": "B-Novative is a technology and innovation company delivering mobile, web, game, image processing and AI solutions that turn ideas into measurable value.", "k8": "Let's talk about your project &rarr;", "k9": "Reference projects", "k10": "Mobile", "k11": "Web", "k12": "Games", "k13": "Image Processing", "k14": "AI", "k15": "We turn new ideas into measurable value.", "k16": "Just as we build our own products, we design tailored solutions for the organizations we work with. Our approach rests on user-centered design, solid engineering and continuous improvement.", "k17": "User-centered design", "k18": "We design every product starting from the end user's needs.", "k19": "Solid engineering", "k20": "We build scalable, secure and sustainable architectures.", "k21": "Continuous innovation", "k22": "We apply new technologies, testing them against real-world feedback.", "k23": "Reference Projects", "k24": "Examples of products we've built.", "k25": "Mobile · Social Platform", "k26": "A social platform for university students, verified with institutional .edu emails, featuring a feed, chat rooms, an academic wiki and a marketplace.", "k27": "Web · Image Processing", "k28": "A vehicle valuation platform that detects brand, model and body type from a car photo and gives an AI-powered price estimate that accounts for damage records.", "k29": "Web · AI", "k30": "A smart news platform that automatically fetches current news, summarizes it with AI and sorts it into categories.", "k31": "View project &rarr;", "k32": "Founder of B-Novative. Turns technology into solutions that work in the field.", "k33": "Have a project in mind?", "k34": "Let's talk it through. Write to us for an introductory call and technical assessment.", "k35": "Email", "k36": "Location", "k37": "© 2026 B-Novative. All rights reserved."};
+  const EN_META = {
+    title: 'B-Novative | Technology and Innovation',
+    desc: 'B-Novative is a technology and innovation company delivering mobile, web, game, image processing and AI solutions.'
+  };
+  const langBtn = document.getElementById('langToggle');
+  const metaDesc = document.querySelector('meta[name="description"]');
+  const TR_META = { title: document.title, desc: metaDesc ? metaDesc.getAttribute('content') : '' };
+  function applyLang(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      if (el.dataset.tr === undefined) el.dataset.tr = el.innerHTML;
+      el.innerHTML = l === 'en' ? EN[el.dataset.i18n] : el.dataset.tr;
+    });
+    const m = l === 'en' ? EN_META : TR_META;
+    document.title = m.title;
+    if (metaDesc) metaDesc.setAttribute('content', m.desc);
+    langBtn.textContent = l === 'en' ? 'TR' : 'EN';
+    langBtn.setAttribute('aria-label', l === 'en' ? 'Türkçe\'ye geç' : 'Switch to English');
+  }
+  let lang = 'tr';
+  try { lang = localStorage.getItem('bn-lang') || ((navigator.language || 'tr').toLowerCase().startsWith('tr') ? 'tr' : 'en'); } catch (e) {}
+  if (lang !== 'tr') applyLang(lang); else langBtn.setAttribute('aria-label', 'Switch to English');
+  langBtn.addEventListener('click', () => {
+    lang = lang === 'tr' ? 'en' : 'tr';
+    applyLang(lang);
+    try { localStorage.setItem('bn-lang', lang); } catch (e) {}
+  });
+
   const root = document.documentElement;
   const themeBtn = document.getElementById('themeToggle');
   const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
